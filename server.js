@@ -1,6 +1,5 @@
 // Dependencies
 const express = require('express');
-const fs = require('fs');
 
 
 // Set up Express App
@@ -10,6 +9,8 @@ const PORT = process.env.PORT || 8080;
 // Set up for Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(express.static("public"))
 
 // Routes Files
 require("./routes/apiRoutes")(app);
