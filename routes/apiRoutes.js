@@ -26,7 +26,7 @@ module.exports = app => {
                 id: uuidv4()
             }
 
-            console.log(noteDetails)
+           
             newNote.push(noteDetails);
 
             fs.writeFile('./db/db.json', JSON.stringify(newNote), 'utf-8', (err) => {
@@ -41,7 +41,7 @@ module.exports = app => {
 
     app.delete('/api/notes/:id', (req, res) => {
         const noteId = req.params.id;
-        console.log(noteId)
+      
 
         fs.readFile('./db/db.json', (err, data) => {
             if (err) throw err;
@@ -49,7 +49,7 @@ module.exports = app => {
             newNote = newNote.filter(note => {
                 return noteId != note.id
             });
-            console.log(newNote)
+            
             fs.writeFile('./db/db.json', JSON.stringify(newNote), 'utf-8', (err) => {
                 if (err) throw err;
 
