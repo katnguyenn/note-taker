@@ -13,12 +13,13 @@ This application can be used to write, save and delete notes. Using express back
 
 * The application is deployed on this platform.
 
-![Note Taker App](Note-Taker-App.png)
-![Note Taker Gif](Note-Taker.gif)
+
+
+![Note Taker Gif](public/assets/img/Note-Taker.gif)
 
 ## Links
 
 [Application](https://notetaker024.herokuapp.com/)
 
-[Github](https://github.com/katnguyenn/note-taker)
+
 
